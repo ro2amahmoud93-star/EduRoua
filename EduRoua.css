@@ -1,0 +1,401 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+ font-family: 'Montserrat', sans-serif;
+ color: #4e4e4e;
+}
+
+.navbar {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 20px 8%;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #dcdcdc;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.logo span {
+    color: #341a94;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #dcdcdc;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #341a94;
+     text-decoration: underline;
+}
+
+.signup-btn {
+    text-decoration: none;
+    background-color: #341a94;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #204aae;
+}
+
+
+
+.hero-section {
+    position: relative;
+    min-height: 600px;
+    isolation: isolate;
+}
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(151, 148, 204, 0.75);
+    z-index: -1;
+}
+
+.navbar {
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+
+.hero-content {
+    color:#341a94;
+    position: relative;
+    z-index: 1;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 80px 10%;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.section-label {
+    color: #341a94;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.about-content h2 {
+    font-size: 36px;
+    color: #263b50;
+    margin: 15px 0;
+}
+
+.about-content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 13px 28px;
+    background-color: #341a94;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+.courses-section {
+    padding: 80px 10%;
+    background-color: #f7faff;
+    text-align: center;
+}
+
+.courses-heading span {
+    color: #341a94;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.courses-heading h2 {
+    color: #263b50;
+    font-size: 34px;
+    margin: 15px 0;
+}
+
+.courses-heading p {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+.courses-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.course-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.course-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.course-info {
+    padding: 20px;
+}
+
+.course-info h3 {
+    color: #263b50;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.course-info p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.all-courses {
+    margin-top: 45px;
+}
+
+.all-courses a {
+    display: inline-block;
+    padding: 13px 35px;
+    background-color: #341a94;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.all-courses a:hover {
+    background-color: #204aae;
+}
+
+.contact-section {
+    padding: 80px 10%;
+    background-color: #ffffff;
+}
+
+.contact-heading {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contact-heading span {
+    color: #341a94;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.contact-heading h2 {
+    color: #263b50;
+    font-size: 34px;
+    margin: 15px 0;
+}
+
+.contact-heading p {
+    color: #777;
+    font-size: 16px;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+    align-items: stretch;
+}
+
+.contact-form {
+    flex: 1.5;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    color: #263b50;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce4ec;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #341a94;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    background-color: #6f8ce2;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor:pointer;
+}
+
+.contact-info {
+    flex: 1;
+    background-color: #f7faff;
+    padding: 35px;
+    border-radius: 12px;
+}
+
+.contact-info h3 {
+    color: #263b50;
+    font-size: 25px;
+    margin-top: 0;
+}
+
+.contact-info > p {
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.contact-detail {
+    margin-bottom: 25px;
+}
+
+.contact-detail h4 {
+    color: #263b50;
+    margin-bottom: 10px;
+}
+
+.contact-detail a {
+    color: #341a94;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+#langBtn {
+    padding: 10px 18px;
+    border: 1px solid #341a94;
+    background: transparent;
+    color: #341a94;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#langBtn:hover {
+    background: #341a94;
+    color: white;
+}
+
+[dir="rtl"] {
+    text-align: right;
+}
+[dir="rtl"] body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+[dir="ltr"] body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
